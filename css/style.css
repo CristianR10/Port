@@ -1,12 +1,111 @@
+* {
+    box-sizing: border-box;
+}
 body{
 	margin: 0;
 	padding: 0;	
 }
+/* Panels. */
+.splitview {
+    position: relative;    
+    min-height: 45vw;
+    overflow: hidden;
+}
+/*Esse Código Ajuntou as duas imagens*/
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+/*Jogou os Textos para trás*/
+.panel .content {
+        position: absolute;
+        width: 100vw;
+        min-height: 45vw;
+        color: #FFF;
+    }
+    /*Deixou a imagem sem margin e maior e fez aparecer o texto da direita*/
+.panel .description {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+/*.panel img {  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }*/
+.bottom .description {
+        right: 5%;
+    }
+/*Deixa a marcação com angulos diferentes, se eu quiser deixar linear eu apago o polygon abaixo*/    
+/*Também posso mudar a cor*/
+.top {
+    /*background-color: rgb(143, 0, 0);*/
+    z-index: 2;
+    width: 50vw;
+
+    -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+.top .description {
+        left: 5%;
+    }
+/*linha de divisão
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}*/
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1063px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+img{
+  width: 100%;
+}
 /**Posicionamento da barra de tarefas*/
-header{
-	width: 100%;
-	height: 100px;
-	background-color: rgba(0, 0, 0, 0.2); 
+.barra_tarefas {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    z-index: 3;
 }
 .logo,
 .redes_sociais{
@@ -21,7 +120,7 @@ header{
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
-	margin-left: 127px;
+	margin-left: 181px;
 	margin-top: 20px;
 }
 .redes_sociais{
@@ -48,4 +147,99 @@ a{
 .icon_svg{
 	width: 60px;
 }
-
+/***************************/
+section {
+    background-color: #262626;
+    width: 100%;
+    height: 2064px;
+    position: absolute;
+}
+/*lado esquerdo*/
+.section_left {
+    width: 960px;   
+    height: 469px;
+    padding: 50px 0px 0px 181px;
+}
+/*Textos*/
+.titulo,
+.titulo_skil,
+.ilustracao{
+    font-size: 103px;
+  }
+.texto{
+  font-size: 38px;
+}
+.texto,
+.titulo,
+.titulo_skil,
+.ilustracao{
+  margin: auto;
+  color: white;
+  font-family: Segoe Ui;
+}
+/*Posição Texto lado Direito*/
+.titulo_skil,
+.ilustracao {    
+    margin-left: 660px;
+    position: absolute;
+}
+.ilustracao{
+  margin-left: 750px;
+}
+/*Fim*/
+/*lado direito*/
+.section_right{
+    width: 960px;    
+    float: right;
+}
+.cristian {
+    width: 712px;
+    height: 712px;
+    position: absolute;
+    margin-top: -529px;
+    margin-left: 57px;
+    z-index: 3;
+}
+.retangulo{   
+  margin-left: 200px;
+  margin-top: -300px;
+  width: 430px; 
+  height: 430px; 
+  background: white; 
+  border-radius: 8px;  
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.pincel{
+  margin-top: -600px;
+}
+/*Fim*/
+/*------------------------------------*/
+/*Arvore de habilidade*/
+.divisão_skil{
+  width: 100%;
+  background-color: red;
+  margin-top: 450px;
+}
+.imagem_skill{
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;  
+}
+.skil{  
+  width: 241px;
+}
+.imagem_skill_under {
+    position: absolute;    
+    margin-top: 420px;
+    margin-left: 150px;
+}
+/*Fim*/
+/*Ilustração*/
+.section_ilustracao{
+  width: 100%;
+  background-color: red;
+  margin-top: 1200px;
+  text-align: center;  
+}
