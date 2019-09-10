@@ -1,10 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="whatsapp" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+
+	svg {
+  display: block;
+  margin: auto;
+}
+
+path {
+  stroke: white;
+  stroke-width: 2px;
+  stroke-dasharray: 853;
+  animation: 6s draw forwards;
+}
+
+@keyframes draw {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 853;
+  }
+  25% {
+    fill-opacity: 0;
+    stroke: white;
+  }
+  75% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke: none;
+  }
+}
+	.st0{fill:#FFFFFF;}	
 </style>
+<script type="text/js">
+var draw = document.querySelector('svg path');
+
+var tam = draw.getTotalLength();
+
+console.log(tam);
+	</script>
 <g>
 	<g>
 		<path id="WhatsApp" class="st0" d="M304.21,197.34c0,55.51-45.34,100.5-101.28,100.5c-17.76,0-34.44-4.54-48.96-12.51

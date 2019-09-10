@@ -1,3 +1,4 @@
+/******************************************Configuração do Body****************************************************************/
 * {
     box-sizing: border-box;
 }
@@ -5,56 +6,58 @@ body{
 	margin: 0;
 	padding: 0;	
 }
-/* Panels. */
+/****************************************************Fim**********************************************************************/
+/***************************************************Banner********************************************************************/
+/************************************************** Panels********************************************************************/
 .splitview {
     position: relative;    
     min-height: 45vw;
     overflow: hidden;
 }
-/*Esse Código Ajuntou as duas imagens*/
+/**************************************Esse Código Ajuntou as duas imagens****************************************************/
 .panel {
-    position: absolute;
-    width: 100vw;
-    min-height: 45vw;
-    overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  overflow: hidden;
 }
-/*Jogou os Textos para trás*/
+/*******************************************Jogou os Textos para trás********************************************************/
 .panel .content {
-        position: absolute;
-        width: 100vw;
-        min-height: 45vw;
-        color: #FFF;
-    }
-    /*Deixou a imagem sem margin e maior e fez aparecer o texto da direita*/
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  color: #FFF;
+}
+/****************************Deixou a imagem sem margin e maior e fez aparecer o texto da direita****************************/
 .panel .description {
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
-/*.panel img {  
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+/*Comentário ou código que não precisei usar*/
+/*panel img {  
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }*/
+}*/
 .bottom .description {
-        right: 5%;
-    }
-/*Deixa a marcação com angulos diferentes, se eu quiser deixar linear eu apago o polygon abaixo*/    
-/*Também posso mudar a cor*/
+  right: 5%;
+}
+/*********************Deixa a marcação com angulos diferentes, se eu quiser deixar linear eu apago o polygon abaixo***********/    
+/***************************************************Também posso mudar a cor**************************************************/
 .top {
-    /*background-color: rgb(143, 0, 0);*/
-    z-index: 2;
-    width: 50vw;
-
-    -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+  /*background-color: rgb(143, 0, 0);*/
+  z-index: 2;
+  width: 50vw;
+  -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
 }
 .top .description {
-        left: 5%;
-    }
+  left: 5%;
+}
 /*linha de divisão
 .handle {
     height: 100%;
@@ -66,38 +69,34 @@ body{
     left: 50%;
     z-index: 3;
 }*/
-
-/* Skewed. */
+/**************************************************************Skewed.***********************************************************/
 .skewed .handle {
-    top: 50%;
-    transform: rotate(30deg) translateY(-50%);
-    height: 200%;
-    -webkit-transform-origin: top;
-    -moz-transform-origin: top;
-    transform-origin: top;
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
 }
 .skewed .top {
-    transform: skew(-30deg);
-    margin-left: -1000px;
-    width: calc(50vw + 1000px);
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
 }
-
 .skewed .top .content {
-    transform: skew(30deg);
-    margin-left: 1063px;
+  transform: skew(30deg);
+  margin-left: 1063px;
 }
-
-/* Responsive. */
+/************************************************************Responsive**********************************************************/
 @media (max-width: 900px) {
     body {
         font-size: 75%;
     }
-}
-
+  }
 img{
   width: 100%;
 }
-/**Posicionamento da barra de tarefas*/
+/***************************************************Posicionamento da barra de tarefas********************************************/
 .barra_tarefas {
     position: absolute;
     overflow: hidden;
@@ -143,15 +142,17 @@ a{
 	text-decoration: none;	
 	color: black;
 }
-/*Configrações SVG*/
+/***************************************************fim************************************************************************/
+/*********************************************Configrações SVG*****************************************************************/
 .icon_svg{
 	width: 60px;
 }
-/***************************/
-section {
+/***************************************************fim************************************************************************/
+/***************************************************section********************************************************************/
+.conteudo {
     background-color: #262626;
     width: 100%;
-    height: 2064px;
+    height: 2800px;
     position: absolute;
 }
 /*lado esquerdo*/
@@ -160,37 +161,12 @@ section {
     height: 469px;
     padding: 50px 0px 0px 181px;
 }
-/*Textos*/
-.titulo,
-.titulo_skil,
-.ilustracao{
-    font-size: 103px;
-  }
-.texto{
-  font-size: 38px;
-}
-.texto,
-.titulo,
-.titulo_skil,
-.ilustracao{
-  margin: auto;
-  color: white;
-  font-family: Segoe Ui;
-}
-/*Posição Texto lado Direito*/
-.titulo_skil,
-.ilustracao {    
-    margin-left: 660px;
-    position: absolute;
-}
-.ilustracao{
-  margin-left: 750px;
-}
-/*Fim*/
 /*lado direito*/
-.section_right{
-    width: 960px;    
+.section_right {
+    height: 0;
+    width: 960px;
     float: right;
+    clear: both;
 }
 .cristian {
     width: 712px;
@@ -214,32 +190,242 @@ section {
 .pincel{
   margin-top: -600px;
 }
-/*Fim*/
-/*------------------------------------*/
-/*Arvore de habilidade*/
+/****************************************************Fim**********************************************************************/
+/***************************************************Textos********************************************************************/
+.titulo,
+.titulo_skil,
+.titulo_ilus{
+    font-size: 103px;
+  }
+.texto{
+  font-size: 38px;
+}
+.texto,
+.titulo,
+.titulo_skil,
+.titulo_ilus{
+  margin: auto;
+  color: white;
+  font-family: Segoe Ui;
+}
+/*Posição Texto lado Direito*/
+.titulo_skil{    
+    text-align: center;
+}
+/****************************************************Fim**********************************************************************/
+
+/**********************************************Arvore de habilidade***********************************************************/
 .divisão_skil{
   width: 100%;
-  background-color: red;
   margin-top: 450px;
 }
-.imagem_skill{
-  position: absolute;
+.container{
+  display: flex; 
+  justify-content: center;
+}
+.container_1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 84px;
+}
+.habilidade {
+  width: 246px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+/****************************************************Fim**********************************************************************/
+/*************************************************Ilustração/coder************************************************************/
+.ilustracao,
+.coder{
   width: 100%;
-  margin-top: 150px;  
-}
-.skil{  
-  width: 241px;
-}
-.imagem_skill_under {
-    position: absolute;    
-    margin-top: 420px;
-    margin-left: 150px;
-}
-/*Fim*/
-/*Ilustração*/
-.section_ilustracao{
-  width: 100%;
-  background-color: red;
-  margin-top: 1200px;
   text-align: center;  
 }
+.titulo_ilus {
+    margin-top: 200px;
+}
+.slide_1,
+.slide_2,
+.slide_3{
+  width: 455px;
+  height: 253px;
+  background-color: white;
+  margin: 53px;
+  border-radius: 8px;
+}
+/****************************************************Fim**********************************************************************/
+/****************************************************Background do form*******************************************************/
+.back_form {
+    width: 100%;
+    margin-top: 2700px;
+}
+.form_direito {  
+  width: 672px;
+  height: 1041px;
+  background-color: #262626;
+  position: relative;
+  margin-top: -1170px;
+  float: right;
+  padding: 90px;
+  margin-right: 19.5%;
+  border-radius: 0px 8px 8px 0px;
+}
+.form_esquerdo {
+  width: 672px;
+  height: 1041px;
+  position: relative;
+  margin-top: -1170px;
+  float: left;
+  margin-left: 16%;
+  border-radius: 8px 0px 0px 8px;
+}
+.form_direito, .form_esquerdo {
+  box-shadow: 1px 1px 0.5em -0.5px #242424;
+}
+/****************************************************Fim**********************************************************************/
+/****************************************************Form*********************************************************************/
+.can_help {
+    font-size: 46px;
+    color: white;
+    font-family: Segoe Ui;
+    margin-top: auto;
+    text-align: center;
+}
+label{
+  color: white;
+  font-size: 46px;
+  font-family: Segoe Ui;
+}
+input{
+  border-style: none;
+  border-bottom: solid 1px;
+  border-color:#707070;
+  color: white;
+  background-color: #262626; 
+  width: 100%; 
+  height: 80px;
+  font-size: 36px;
+}
+#place::-webkit-input-placeholder{    
+    color: white;
+    background-color: #262626;
+    text-transform: uppercase;
+    font-family: Segoe Ui;
+    font-size: 36px;
+}
+textarea{    
+    background-color: #262626;
+    border-radius: 8px;
+    color: white;
+    font-family: Segoe Ui;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/**************************************************Configuração e design do botão***********************************************/
+button{
+  width: 100%;
+  height: 71px;
+  background-color: #262626;
+  border-style: none;  
+  padding: 5px;
+}
+.ok {
+    color: #E10404;
+    font-family: Segoe Ui;
+    font-size: 36px;    
+    margin: 0;
+}
+
+.japao{
+  height: 1041px;  
+  border-radius: 8px 0px 0px 8px;
+}
+
+.ok{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #E10404;
+  font-size: 30px;    
+  text-decoration: none;  
+  overflow: hidden;
+  transition: 0.2s;
+}
+.ok:hover{
+  color: white;
+  background: #E10404;
+  box-shadow: 0 0 10px #E10404, 0 0 40px #E10404, 0 0 80px #E10404;
+  border-radius: 8px;
+  transition-delay: 1s;
+}
+.ok span{
+  position: absolute;
+  display: block;
+}
+.ok span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #E10404);
+}
+.ok:hover span:nth-child(1){  
+  left: 100%;
+  transition: 2s;  
+}
+/**********/
+.ok span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #E10404);
+}
+.ok:hover span:nth-child(3){  
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.ok span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #E10404);
+}
+.ok:hover span:nth-child(2){  
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.ok span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #E10404);
+}
+.ok:hover span:nth-child(4){  
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+/****************************************************Fim**********************************************************************/
+/****************************************************footer********************************************************************/
+footer {
+  padding: 67px;
+  margin-top: -25px;
+  width: 100%;
+  height: 100px;
+  background-color: #262626;
+}
+h6 {
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  color: white;
+  font-family: Segoe Ui;
+  text-align: center;
+}
+/****************************************************Fim**********************************************************************/
