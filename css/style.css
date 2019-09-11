@@ -9,6 +9,10 @@ body{
 /****************************************************Fim**********************************************************************/
 /***************************************************Banner********************************************************************/
 /************************************************** Panels********************************************************************/
+.original,
+.modificado{
+  width: 100%;
+}
 .splitview {
     position: relative;    
     min-height: 45vw;
@@ -94,9 +98,6 @@ body{
         font-size: 75%;
     }
   }
-img{
-  width: 100%;
-}
 /***************************************************Posicionamento da barra de tarefas********************************************/
 .barra_tarefas {
     position: absolute;
@@ -167,7 +168,7 @@ a{
     height: 0;
     width: 960px;
     float: right;
-    clear: both;
+    z-index: 3;    
 }
 .cristian {
     width: 712px;
@@ -188,14 +189,16 @@ a{
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-.pincel{
-  margin-top: -600px;
+.pincel {    
+    margin-top: -620px;
+    margin-left: -47px;
 }
 /****************************************************Fim**********************************************************************/
 /***************************************************Textos********************************************************************/
 .titulo,
 .titulo_skil,
-.titulo_ilus{
+.titulo_ilus,
+.titulo_coder{
     font-size: 103px;
   }
 .texto{
@@ -204,7 +207,8 @@ a{
 .texto,
 .titulo,
 .titulo_skil,
-.titulo_ilus{
+.titulo_ilus,
+.titulo_coder{
   margin: auto;
   color: white;
   font-family: Segoe Ui;
@@ -218,7 +222,7 @@ a{
 /**********************************************Arvore de habilidade***********************************************************/
 .divisão_skil{
   width: 100%;
-  margin-top: 450px;
+  margin-top: -850px;
 }
 .container{
   display: flex; 
@@ -227,7 +231,7 @@ a{
 .container_1 {
   display: flex;
   justify-content: center;
-  margin-top: 84px;
+  margin-top: 94px;
 }
 .habilidade {
   width: 246px;
@@ -243,25 +247,18 @@ a{
   text-align: center;  
 }
 .coder {
-    margin-top: -100px;
+    margin-top: 400px;
+    text-align: center;    
+    position: absolute;
 }
 .titulo_ilus {
     margin-top: 200px;
 }
-.slide_1,
-.slide_2,
-.slide_3{
-  width: 455px;
-  height: 253px;
-  background-color: white;
-  margin: 53px;
-  border-radius: 8px;
-}
 /****************************************************Fim**********************************************************************/
 /****************************************************Background do form*******************************************************/
 .back_form {
-    width: 100%;
-    margin-top: 2800px;
+    width: 100%;    
+    margin-top: 2800px;   
 }
 .form_direito {  
   width: 672px;
@@ -342,6 +339,7 @@ button{
 }
 
 .japao{
+  width: 100%;
   height: 1041px;  
   border-radius: 8px 0px 0px 8px;
 }
@@ -449,4 +447,37 @@ h6 {
   animation-duration: 3s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
+}
+.img_code {
+  width: 800px;
+  margin-top: 108px;
+}
+.img_lobinho {
+  float: right;
+  margin-right: 5px;
+  margin-top: -587px;
+  z-index: 2;    
+}
+#lobinho {
+    width: 960px;
+    height: 1538px;
+    position: static;
+}
+.skil{
+  width: 241px;
+}
+.mayk{
+  position: absolute;
+  text-align: center;
+  margin-left: -600px;
+}
+.mayk_1 {
+    position: absolute;
+    text-align: center;
+    margin-left: -600px;
+    margin-top: 550px;
+}
+#img{
+  width: 1920px;
+  height: 1235px;
 }
