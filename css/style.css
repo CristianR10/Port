@@ -49,11 +49,12 @@ body{
 /*********************Deixa a marcação com angulos diferentes, se eu quiser deixar linear eu apago o polygon abaixo***********/    
 /***************************************************Também posso mudar a cor**************************************************/
 .top {
-  /*background-color: rgb(143, 0, 0);*/
-  z-index: 2;
-  width: 50vw;
-  -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    /*background-color: rgb(77, 69, 173);*/
+    z-index: 2;
+    width: 50vw;
+
+    -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
 }
 .top .description {
   left: 5%;
@@ -241,6 +242,9 @@ a{
   width: 100%;
   text-align: center;  
 }
+.coder {
+    margin-top: -100px;
+}
 .titulo_ilus {
     margin-top: 200px;
 }
@@ -257,7 +261,7 @@ a{
 /****************************************************Background do form*******************************************************/
 .back_form {
     width: 100%;
-    margin-top: 2700px;
+    margin-top: 2800px;
 }
 .form_direito {  
   width: 672px;
@@ -267,7 +271,7 @@ a{
   margin-top: -1170px;
   float: right;
   padding: 90px;
-  margin-right: 19.5%;
+  margin-right: 260px;
   border-radius: 0px 8px 8px 0px;
 }
 .form_esquerdo {
@@ -276,7 +280,7 @@ a{
   position: relative;
   margin-top: -1170px;
   float: left;
-  margin-left: 16%;
+  margin-left: 260px;
   border-radius: 8px 0px 0px 8px;
 }
 .form_direito, .form_esquerdo {
@@ -412,6 +416,18 @@ button{
   transition-delay: 0.75s;
 }
 /****************************************************Fim**********************************************************************/
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background: white;
+      width: 300px;
+      height: 300px;
+    }
 /****************************************************footer********************************************************************/
 footer {
   padding: 67px;
@@ -429,3 +445,8 @@ h6 {
   text-align: center;
 }
 /****************************************************Fim**********************************************************************/
+.pulse {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}

@@ -5,10 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">		
 			<title>Cristian Renato</title>
-			<link href="css/style.css" rel="stylesheet">		
-			<script src="js/script.js"></script> <!-- Modernizr -->
+			<link href="css/animate.css" rel="stylesheet">
+			<link href="css/swiper.min.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet">						
+									
 		</head>
 	<body>
+		<script src="js/script.js"></script>
+		<script src="js/swiper.min.js"></script>
 		<header>
 			<div class="splitview skewed">
         		<div class="panel bottom">
@@ -16,7 +20,7 @@
 	                <div class="description">
 	                    <p id="prof">Code</p>	                    
 	                </div>
-					<img src="img/img-original.jpg"> 
+					<img src="img/img-original-cris.jpg"> 
 				</div>
 			</div>
 			<div class="panel top">
@@ -24,7 +28,7 @@
 	                <div class="description">
 	                    <p id="prof">Design</p>	                   
 	                </div>
-	                <img src="img/img-modified.jpg">
+	                <img src="img/img-modified-cris.jpg">
 	            </div>
         	</div>
         <div class="handle"></div>
@@ -34,7 +38,7 @@
 					<div class="logo">
 						<img class="lobo" src="img/LOGO-CRIS_02.png">
 					</div>
-					<div class="redes_sociais">
+					<div class="redes_sociais animated pulse">
 						<ul>
 							<li><a href="https://api.whatsapp.com/send?1=ptBR&phone=5511949389925"><img class="icon_svg" src="icon/zap-zap.svg"></a></li>
 							<li><a href="mailto:cristianhiei@gmail.com"><img class="icon_svg" src="icon/email.svg"></a></li>
@@ -48,7 +52,7 @@
 		</header>
 
 		<section class="conteudo">
-			<div class="section_left">
+			<div class="section_left animated Bounce" >
 				<p class="titulo">Sobre mim</p>
 				<p class="texto">
 					Sou recém formado em<br>
@@ -62,7 +66,7 @@
 				</p>
 			</div>
 			<div class="section_right">	
-				<img class="cristian" src="img/cris.gif">			
+				<img class="cristian" src="img/cris.png">			
 				<div class="retangulo"></div>
 				<img class="pincel" src="img/133.png">				
 			</div>
@@ -70,15 +74,15 @@
 				<p class="titulo_skil">Ferramentas</p>				
 			</div>
 			<div class="container">
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>									
+					<div class="habilidade"><img class="skil" src="img/htmlok.png"></div>						
+					<div class="habilidade"><img class="skil" src="img/css.png"></div>						
+					<div class="habilidade"><img class="skil" src="img/js.png"></div>						
+					<div class="habilidade"><img class="skil" src="img/php.png"></div>									
 			</div>
 			<div class="container_1">
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/html.png"></div>
+					<div class="habilidade"><img class="skil" src="img/ps.png"></div>						
+					<div class="habilidade"><img class="skil" src="img/ai.png"></div>						
+					<div class="habilidade"><img class="skil" src="img/xd.png"></div>
 			</div>
 			<div class="ilustracao">
 				<p class="titulo_ilus">
@@ -86,9 +90,23 @@
 				</p>
 			</div>
 			<div class="container">
-				<div class="slide_1"></div>						
-				<div class="slide_2"></div>						
-				<div class="slide_3"></div>				
+				 <!-- Swiper -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			    </div>
+    		<!-- Add Pagination -->
+    		<div class="swiper-pagination"></div>
+  			</div>							
 			</div>
 			<div class="coder">
 				<p class="titulo_ilus">
@@ -96,9 +114,22 @@
 				</p>
 			</div>
 			<div class="container">
-				<div class="slide_1"></div>						
-				<div class="slide_2"></div>						
-				<div class="slide_3"></div>				
+				<!-- Swiper -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			    </div>
+    		<!-- Add Pagination -->
+    		<div class="swiper-pagination"></div>			
 			</div>			
 		</section>
 		<div class="back_form">
@@ -120,12 +151,30 @@
 					</button>
 				</form>		
 			</div>
-			<div class="form_esquerdo">
+			<div class="form_esquerdo animated bounce delay-2s">
 				<img class="japao" src="img/form.jpg"></img>
 			</div>
 		</div>
 		<footer>
 			<h6>2019 Cristian R.</h6>
 		</footer>
+		<script>
+		    var swiper = new Swiper('.swiper-container', {
+		      effect: 'coverflow',
+		      grabCursor: true,
+		      centeredSlides: true,
+		      slidesPerView: 'auto',
+		      coverflowEffect: {
+		        rotate: 50,
+		        stretch: 0,
+		        depth: 100,
+		        modifier: 1,
+		        slideShadows : true,
+		      },
+		      pagination: {
+		        el: '.swiper-pagination',
+		      },
+		    });
+  		</script>
   	</body>
 </html>

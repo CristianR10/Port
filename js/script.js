@@ -23,3 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 /*Fim*/
+const target = document.querySelectorAll('conteudo');
+const animationClass = 'animate'
