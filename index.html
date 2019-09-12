@@ -7,12 +7,11 @@
 			<title>Cristian Renato</title>
 			<link href="css/animate.css" rel="stylesheet">
 			<link href="css/swiper.min.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet">						
-									
+			<link href="css/style.css" rel="stylesheet">		
 		</head>
 	<body>
 		<script src="js/script.js"></script>
-		<script src="js/swiper.min.js"></script>
+		<script src="js/swiper.min.js"></script>						
 		<header>
 			<div class="splitview skewed">
         		<div class="panel bottom">
@@ -52,7 +51,7 @@
 		</header>
 
 		<section class="conteudo">
-			<div class="section_left animated Bounce" >
+			<div class="section_left animation_e">
 				<p class="titulo">Sobre mim</p>
 				<p class="texto">
 					Sou recém formado em<br>
@@ -65,7 +64,7 @@
 					algum livro.<br>
 				</p>
 			</div>
-			<div class="section_right">	
+			<div class="section_right animation_d">	
 				<img class="cristian" src="img/cris.png">			
 				<div class="retangulo"></div>
 				<img class="pincel" src="img/133.png">				
@@ -76,62 +75,46 @@
 			<div class="img_lobinho">
 				<img id="lobinho" src="img/lobinho.png">
 			</div>			
-			<div class="divisão_skil">
-				<p class="titulo_skil">Ferramentas</p>				
+			<div class="divisão_skil animation_e">
+				<p class="titulo_skil ">Ferramentas</p>				
 			</div>
 			<div class="container">
-					<div class="habilidade"><img class="skil" src="img/htmlok.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/css.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/js.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/php.png"></div>									
+					<div class="habilidade animation_e"><img class="skil" src="img/htmlok.png"></div>						
+					<div class="habilidade animation_e"><img class="skil" src="img/css.png"></div>						
+					<div class="habilidade animation_d"><img class="skil" src="img/js.png"></div>						
+					<div class="habilidade animation_d"><img class="skil" src="img/php.png"></div>									
 			</div>
 			<div class="container_1">
-					<div class="habilidade"><img class="skil" src="img/ps.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/ai.png"></div>						
-					<div class="habilidade"><img class="skil" src="img/xd.png"></div>
+					<div class="habilidade animation_e"><img class="skil" src="img/ps.png"></div>						
+					<div class="habilidade animation_d"><img class="skil" src="img/ai.png"></div>						
+					<div class="habilidade animation_d"><img class="skil" src="img/xd.png"></div>
 			</div>
-			<div class="ilustracao">
+			<div class="ilustracao animation_e">
 				<p class="titulo_ilus">
 					Ilustrações
 				</p>
 			</div>
-			<div class="container mayk">				 
+			<div class="container mayk animation_d">				 
 				<div class="swiper-container">
 				    <div class="swiper-wrapper">
 				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>				      
 				    </div>
 	    		
 	    			<div class="swiper-pagination"></div>
 	  			</div>							
 			</div>
-			<div class="coder">
+			<div class="coder animation_e">
 				<p class="titulo_coder">
 					Coder
 				</p>
 			</div>
-			<div class="container mayk_1">
+			<div class="container mayk_1 animation_d">
 				<!-- Swiper -->
 			<div class="swiper-container">
 			    <div class="swiper-wrapper">
 			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>			      
 			    </div>
     		<!--Add Pagination-->
     		<div class="swiper-pagination"></div>			
@@ -139,14 +122,14 @@
 		</section>
 		<div class="back_form">
 			<img id="img" class="form" src="img/jp.jpg"></img>						
-			<div class="form_direito">
+			<div class="form_direito animation_d">
 				<p class="can_help">Como posso te ajudar?</p>
-				<form method="POST" action="#">
+				<form class="form_r" method="POST" action="#">
 					<input placeholder="Nome:" id="place" type="text" name="txtnome"><br>
 					<input placeholder="Telefone:" id="place" type="text" name="txtnome"><br>
 					<input placeholder="E-mail:" id="place" type="email" name="txtnome"><br>
 					<label>Mensagem:</label><br>
-					<textarea rows="15" cols="52"></textarea><br>
+					<textarea></textarea><br>
 						<button class="ok">						
 								<span></span>
 	  							<span></span>
@@ -156,7 +139,7 @@
 						</button>
 				</form>		
 			</div>		
-			<div class="form_esquerdo">
+			<div class="form_esquerdo animation_e">
 				<img class="japao" src="img/form.jpg"></img>
 			</div>
 		</div>
@@ -181,5 +164,7 @@
 		      },
 		    });
   		</script>
+  		<script src="js/animacao.js"></script>
+
   	</body>
 </html>

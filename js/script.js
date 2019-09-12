@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         topPanel.style.width = event.clientX + skewHack + delta + 'px';
     });
 });
-/*Fim*/
-const target = document.querySelectorAll('conteudo');
-const animationClass = 'animate'
+/*Fim*//*querySelectorAll se der errado*/
+/*****Comando animações******/
+
+

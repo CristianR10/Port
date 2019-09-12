@@ -121,7 +121,7 @@ body{
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
-	margin-left: 181px;
+	margin-left: 20%;
 	margin-top: 20px;
 }
 .redes_sociais{
@@ -233,6 +233,15 @@ a{
   justify-content: center;
   margin-top: 94px;
 }
+.mayk,
+.mayk_1{
+  position: absolute;
+  text-align: center;  
+  width: 95%;
+}
+.mayk_1 {
+  margin-top: 550px;
+}
 .habilidade {
   width: 246px;
   height: 100px;
@@ -260,24 +269,28 @@ a{
     width: 100%;    
     margin-top: 2800px;   
 }
+#img{
+  width: 100%;
+  height: 1235px;
+}
 .form_direito {  
-  width: 672px;
+  width: 650px;
   height: 1041px;
   background-color: #262626;
   position: relative;
   margin-top: -1170px;
   float: right;
   padding: 90px;
-  margin-right: 260px;
+  margin-right: 16.9%;
   border-radius: 0px 8px 8px 0px;
 }
 .form_esquerdo {
-  width: 672px;
+  width: 650px;
   height: 1041px;
   position: relative;
   margin-top: -1170px;
   float: left;
-  margin-left: 260px;
+  margin-left: 15%;
   border-radius: 8px 0px 0px 8px;
 }
 .form_direito, .form_esquerdo {
@@ -314,13 +327,18 @@ input{
     font-family: Segoe Ui;
     font-size: 36px;
 }
-textarea{    
+textarea {
     background-color: #262626;
     border-radius: 8px;
     color: white;
     font-family: Segoe Ui;
     font-size: 20px;
     padding: 5px;
+    width: 100%;
+    height: 450px;
+}
+.form_r{
+  margin-left: 2%;
 }
 
 /**************************************************Configuração e design do botão***********************************************/
@@ -443,11 +461,12 @@ h6 {
   text-align: center;
 }
 /****************************************************Fim**********************************************************************/
-.pulse {
+.pulse {  
   animation-duration: 3s;
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-iteration-count: infinite;
 }
+
 .img_code {
   width: 800px;
   margin-top: 108px;
@@ -466,18 +485,29 @@ h6 {
 .skil{
   width: 241px;
 }
-.mayk{
-  position: absolute;
-  text-align: center;
-  margin-left: -600px;
+/****************************************************Animação scroll*********************************************************/
+.animation_e,
+.animation_d{
+  opacity: 0;
+  transition:  .3s;
 }
-.mayk_1 {
-    position: absolute;
-    text-align: center;
-    margin-left: -600px;
-    margin-top: 550px;
+.animation_e{
+  transform: translate3d(-50px, 0, 0);
 }
-#img{
-  width: 1920px;
-  height: 1235px;
+.animation_d{
+  transform: translate3d(50px, 0, 0);
 }
+.animation_e.slideInLeft{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.animation_d.slideInRight{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+/****************************************************Fim**********************************************************************/
+/****************************************************Responsivo***************************************************************/
+@media only screen and (max-width:){
+
+}
+  
