@@ -56,7 +56,6 @@ body{
     /*background-color: rgb(77, 69, 173);*/
     z-index: 2;
     width: 50vw;
-
     -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
 }
@@ -109,23 +108,21 @@ body{
     z-index: 3;
 }
 .logo,
-.redes_sociais{
-	width: 50%;
+.redes_sociais{	
 	height: 100px;	
 }
-.redes_sociais{
-	float: right;
+.redes_sociais {
+  float: right;
+  margin-top: -100px;
+  margin-right: 8%;
 }
 /*Imagem do Logo*/
-.lobo{
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-	margin-left: 20%;
-	margin-top: 20px;
-}
-.redes_sociais{
-	margin-top: -100px;
+.lobo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 10%;
+  margin-top: 20px;
 }
 ul {
     list-style: none;
@@ -171,8 +168,7 @@ a{
     z-index: 3;    
 }
 .cristian {
-    width: 712px;
-    height: 712px;
+    width: 712px;    
     position: absolute;
     margin-top: -529px;
     margin-left: 57px;
@@ -266,34 +262,40 @@ a{
 /****************************************************Fim**********************************************************************/
 /****************************************************Background do form*******************************************************/
 .back_form {
-    width: 100%;    
-    margin-top: 2800px;   
+    width: 100%;
+    margin-top: 2428px;
 }
 #img{
   width: 100%;
   height: 1235px;
 }
-.form_direito {  
-  width: 650px;
-  height: 1041px;
-  background-color: #262626;
-  position: relative;
-  margin-top: -1170px;
-  float: right;
-  padding: 90px;
-  margin-right: 16.9%;
-  border-radius: 0px 8px 8px 0px;
-}
-.form_esquerdo {
-  width: 650px;
-  height: 1041px;
-  position: relative;
-  margin-top: -1170px;
-  float: left;
-  margin-left: 15%;
+.japao{
+  width: 100%;
+  height: 100%;
   border-radius: 8px 0px 0px 8px;
 }
-.form_direito, .form_esquerdo {
+.form_direito {
+    width: 544px;
+    height: 765px;
+    background-color: #262626;
+    position: relative;
+    margin-top: -825px;
+    float: right;
+    padding: 30px;
+    margin-right: 417px;
+    border-radius: 0px 8px 8px 0px;
+}
+.form_esquerdo {
+    width: 544px;
+    height: 765px;
+    position: relative;
+    margin-top: -825px;
+    float: left;
+    margin-left: 399px;
+    border-radius: 8px 0px 0px 8px;
+}
+.form_direito, 
+.form_esquerdo {
   box-shadow: 1px 1px 0.5em -0.5px #242424;
 }
 /****************************************************Fim**********************************************************************/
@@ -302,8 +304,10 @@ a{
     font-size: 46px;
     color: white;
     font-family: Segoe Ui;
-    margin-top: auto;
     text-align: center;
+}
+.jean {
+    margin-top: -33px;
 }
 label{
   color: white;
@@ -325,7 +329,7 @@ input{
     background-color: #262626;
     text-transform: uppercase;
     font-family: Segoe Ui;
-    font-size: 36px;
+    font-size: 26px;
 }
 textarea {
     background-color: #262626;
@@ -335,12 +339,12 @@ textarea {
     font-size: 20px;
     padding: 5px;
     width: 100%;
-    height: 450px;
+    height: 250px;
 }
-.form_r{
-  margin-left: 2%;
+.form_r {
+    margin-left: 2%;
+    margin-top: -43px;
 }
-
 /**************************************************Configuração e design do botão***********************************************/
 button{
   width: 100%;
@@ -355,13 +359,6 @@ button{
     font-size: 36px;    
     margin: 0;
 }
-
-.japao{
-  width: 100%;
-  height: 1041px;  
-  border-radius: 8px 0px 0px 8px;
-}
-
 .ok{
   position: relative;
   display: inline-block;
@@ -437,7 +434,7 @@ button{
       padding-top: 50px;
       padding-bottom: 50px;
     }
-    .swiper-slide {
+.swiper-slide {
       background-position: center;
       background-size: cover;
       background: white;
@@ -486,7 +483,7 @@ h6 {
   width: 241px;
 }
 /****************************************************Animação scroll*********************************************************/
-.animation_e,
+/*.animation_e,
 .animation_d{
   opacity: 0;
   transition:  .3s;
@@ -505,9 +502,235 @@ h6 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-/****************************************************Fim**********************************************************************/
-/****************************************************Responsivo***************************************************************/
-@media only screen and (max-width:){
+/****************************************************Fim*********************************************************************/
+/****************************************************Responsivo****************************************************/
+@media only screen and (max-width:1878px){
+  .form_direito{
+    margin-right: 397px;
+  }
+  .form_esquerdo{
+    margin-left: 378px;
+  }
+}
+
+
+
+@media only screen and (max-width:1839px){
+  .form_direito{
+    margin-right: 378px;
+  }
+  .form_esquerdo{
+    margin-left: 358px;
+  }
+}
+
+
+
+@media only screen and (max-width:1798px){
+  .form_direito{
+    margin-right: 358px;
+  }
+  .form_esquerdo{
+    margin-left: 338px;
+  }
+}
+
+
+
+@media only screen and (max-width:1760px){
+  .form_direito{
+    margin-right: 338px;
+  }
+  .form_esquerdo{
+    margin-left: 318px;
+  }
+}
+
+
+
+@media only screen and (max-width:1721px){
+  .form_direito{
+    margin-right: 319px;
+  }
+  .form_esquerdo{
+    margin-left: 299px;
+  }
+  .cristian {
+      width: 612px;    
+      margin-left: 140px;   
+  }
+  .retangulo{
+      width: 330px;
+      height: 330px;
+      margin-left: 280px;
+  }
+  .pincel {
+      margin-top: -495px;
+      margin-left: 153px;
+      width: 807px;
+  }
+  .titulo,
+  .titulo_skil,
+  .titulo_ilus,
+  .titulo_coder {
+      font-size: 83px;
+  }
+  .texto {
+      font-size: 28px;
+  }
+  .skil {
+      width: 215px;
+  }
+  .habilidade {
+     width: 211px;
+  }
+}
+
+
+
+@media only screen and (max-width:1682px){
+  .form_direito{
+    margin-right: 299px;
+  }
+  .form_esquerdo{
+    margin-left: 279px;
+  }
+  .divisão_skil { 
+    margin-top: -1118px;
+  }
+}
+@media only screen and (max-width:1644px){
+  .form_direito{
+    margin-right: 280px;
+  }
+  .form_esquerdo{
+    margin-left: 260px;
+  }
+}
+@media only screen and (max-width:1605px){
+  .form_direito{
+    margin-right: 261px;
+  }
+  .form_esquerdo{
+    margin-left: 241px;
+  }
+}
+@media only screen and (max-width:1567px){
+  .form_direito{
+    margin-right: 242px;
+  }
+  .form_esquerdo{
+    margin-left: 222px;
+  }
+}
+@media only screen and (max-width:1490px){
+  .form_direito{
+    margin-right: 204px;
+  }
+  .form_esquerdo{
+    margin-left: 184px;
+  }
+}
+@media only screen and (max-width:1453px){
+  .form_direito{
+    margin-right: 185px;
+  }
+  .form_esquerdo{
+    margin-left: 165px;
+  }
+}
+@media only screen and (max-width:1415px){
+  .form_direito{
+    margin-right: 166px;
+  }
+  .form_esquerdo{
+    margin-left: 146px;
+  }
+}
+@media only screen and (max-width:1377px){
+  .form_direito{
+    margin-right: 147px;
+  }
+  .form_esquerdo{
+    margin-left: 127px;
+  }
+}
+@media only screen and (max-width:1338px){
+  .form_direito{
+    margin-right: 128px;
+  }
+  .form_esquerdo{
+    margin-left: 108px;
+  }
+}
+@media only screen and (max-width:1300px){
+  .form_direito{
+    margin-right: 109px;
+  }
+  .form_esquerdo{
+    margin-left: 89px;
+  }
+}
+@media only screen and (max-width:1261px){
+  .form_direito{
+    margin-right: 90px;
+  }
+  .form_esquerdo{
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width:1224px){
+  .form_direito{
+    margin-right: 71px;
+  }
+  .form_esquerdo{
+    margin-left: 51px;
+  }
+}
+@media only screen and (max-width:1024px){
+  .form_direito{
+    margin-right: 207px;
+    border-radius: 8px;
+  }
+  .form_esquerdo{
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px){
+  .form_direito {
+    margin-right: 51px;
+    width: 347px;
+    padding: 12px;
+    height: 574px;
+}
+  .can_help {
+    font-size: 30px;
+}
+input{
+  height: 35px;
+  font-size: 16px;
+}
+.form_r {
+    margin-top: -7%;
+}
+label{
+  font-size: 30px;
+}
+.jean {
+    margin-top: -12px;
+}
+#place::-webkit-input-placeholder{    
+    color: white;
+    background-color: #262626;
+    text-transform: uppercase;
+    font-family: Segoe Ui;
+    font-size: 16px;
+    }
 
 }
+
+
+
+
+    
   

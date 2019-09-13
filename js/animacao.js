@@ -1,7 +1,7 @@
-const target   = document.querySelectorAll('.animation_e');
+/*const target   = document.querySelectorAll('.animation_e');
 const target_R = document.querySelectorAll('.animation_d');
 /***************************************************Animação do lado Esquerdo******************************************************/
-const debounce = function(func, wait, immediate) {
+/*const debounce = function(func, wait, immediate) {
   let timeout;
   return function(...args) {
     const context = this;
@@ -38,7 +38,7 @@ if (target.length) {
 }
 
 /***************************************************Animação do lado direito******************************************************/
-function animeScroll_R(){
+/*function animeScroll_R(){
 	//console.log("asdfasd");
 	const windowTop = window.pageYOffset + ((window.innerHeight * 3 /6));;
 	//console.log(windowTop);
