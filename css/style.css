@@ -1,16 +1,66 @@
 /******************************************Configuração do Body****************************************************************/
-* {
-    box-sizing: border-box;
-}
 body{
 	margin: 0;
 	padding: 0;	
 }
 /****************************************************Fim**********************************************************************/
+/***************************************************Posicionamento da barra de tarefas********************************************/
+header{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;  
+  width: 100%;  
+  top: 0px;
+  z-index: 3;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+  height: 100px; 
+}
+/*********************************************Configrações SVG*****************************************************************/
+.icon_svg{
+  width: 60px;
+}
+.pulse {  
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+/***************************************************fim************************************************************************/
+.logo,
+.menu{  
+  display: flex;
+  align-items: center;
+}
+nav ul,
+nav li{
+  list-style: none;
+  padding: 0;
+  margin: 0;   
+}
+nav ul{
+  display: flex;
+}
+nav a{
+  display: block;
+  padding: 8px;
+}
+
+/*Imagem do Logo*/
+.lobo {
+  width: 60px;  
+  border-radius: 100%;  
+}
+/***************************************************fim************************************************************************/
 /***************************************************Banner********************************************************************/
+
 /************************************************** Panels********************************************************************/
 .original,
-.modificado{
+.modificado{    
   width: 100%;
 }
 .splitview {
@@ -91,207 +141,166 @@ body{
   transform: skew(30deg);
   margin-left: 1063px;
 }
-/************************************************************Responsive**********************************************************/
-@media (max-width: 900px) {
-    body {
-        font-size: 75%;
-    }
-  }
-/***************************************************Posicionamento da barra de tarefas********************************************/
-.barra_tarefas {
-    position: absolute;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100px;
-    top: 0px;
-    z-index: 3;
-}
-.logo,
-.redes_sociais{	
-	height: 100px;	
-}
-.redes_sociais {
-  float: right;
-  margin-top: -100px;
-  margin-right: 8%;
-}
-/*Imagem do Logo*/
-.lobo {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  margin-left: 10%;
-  margin-top: 20px;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 400px;    
-    margin-top: 20px;
-}
-li{
-    float: left;
-    line-height: 100px;
-    margin-left: 10px;
-    margin-right: 10px; 
-}
-a{
-	text-decoration: none;	
-	color: black;
-}
-/***************************************************fim************************************************************************/
-/*********************************************Configrações SVG*****************************************************************/
-.icon_svg{
-	width: 60px;
-}
-/***************************************************fim************************************************************************/
 /***************************************************section********************************************************************/
-.conteudo {
-    background-color: #262626;
-    width: 100%;
-    height: 2800px;
-    position: absolute;
+#geral{
+  display: flex;
+  justify-content: center;
+  background-color: #262626;
+  height: 2000px;
 }
-/*lado esquerdo*/
-.section_left {
-    width: 960px;   
-    height: 469px;
-    padding: 50px 0px 0px 181px;
+#geral section{
+  flex: 2;
 }
-/*lado direito*/
-.section_right {
-    height: 0;
-    width: 960px;
-    float: right;
-    z-index: 3;    
+#geral aside{
+  flex: 1;
 }
-.cristian {
-    width: 712px;    
-    position: absolute;
-    margin-top: -529px;
-    margin-left: 57px;
-    z-index: 3;
-}
-.retangulo{   
-  margin-left: 200px;
-  margin-top: -300px;
-  width: 430px; 
-  height: 430px; 
-  background: white; 
-  border-radius: 8px;  
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.pincel {    
-    margin-top: -620px;
-    margin-left: -47px;
-}
-/****************************************************Fim**********************************************************************/
-/***************************************************Textos********************************************************************/
+/***************************************************Textos section geral***************************************************************/
 .titulo,
-.titulo_skil,
-.titulo_ilus,
-.titulo_coder{
-    font-size: 103px;
-  }
-.texto{
-  font-size: 38px;
-}
 .texto,
-.titulo,
 .titulo_skil,
 .titulo_ilus,
 .titulo_coder{
+  font-size: 4rem;
   margin: auto;
   color: white;
   font-family: Segoe Ui;
+  }
+  .titulo{
+    width: 380px;
+  }
+  #titulo{
+    margin-bottom: 0;
+  }
+.texto {
+  font-size: 21px;
 }
-/*Posição Texto lado Direito*/
-.titulo_skil{    
-    text-align: center;
+.cristian {
+    width: 512px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 235px;
+    z-index: 3;
+}
+.retangulo {
+    margin-left: 320px;
+    margin-top: 71px;
+    width: 330px;
+    height: 330px;
+    background: white;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.pincel {
+    width: 49.3vw;
+    height: 60.3vw;
+    margin-left: 121px;
+    margin-top: -402px;
+}
+/****************************************************Wolf**********************************************************************/
+#wolf {
+    float: right;
+    height: 1238px;
+    margin-top: -417px;
+    position: static;
 }
 /****************************************************Fim**********************************************************************/
-
+#fig_cod{
+  float: left;
+}
+.fig_cod {    
+    height: 744px;    
+    position: static;
+    margin-left: -438px;
+}
 /**********************************************Arvore de habilidade***********************************************************/
-.divisão_skil{
-  width: 100%;
-  margin-top: -850px;
+.divisão_skil {    
+    margin-top: 522px;
+    margin-left: -360px;
+    position: absolute;    
 }
-.container{
-  display: flex; 
-  justify-content: center;
+.divisão_ferramenta_1 {    
+    margin-top: 632px;
+    margin-left: -360px;
+    position: absolute;    
 }
-.container_1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
+.divisão_ferramenta_2 {    
+    margin-top: 800px;
+    margin-left: -360px;
+    position: absolute;
 }
-.mayk,
-.mayk_1{
-  position: absolute;
-  text-align: center;  
-  width: 95%;
+.skil {
+    width: 200px;
 }
-.mayk_1 {
-  margin-top: 550px;
+#ps{
+  margin-left: 128px;
 }
-.habilidade {
-  width: 246px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
+#ai{
+  margin-right: -6px;
+}
+#xd{
+  margin-right: 129px;
 }
 /****************************************************Fim**********************************************************************/
 /*************************************************Ilustração/coder************************************************************/
 .ilustracao,
-.coder{
-  width: 100%;
+.coder{  
   text-align: center;  
 }
-.coder {
-    margin-top: 400px;
-    text-align: center;    
+.ilustracao {
+    margin-top: 820px;
     position: absolute;
+}
+.coder {
+    margin-top: 1480px;
+    position: absolute;
+    margin-left: 71px;
 }
 .titulo_ilus {
     margin-top: 200px;
 }
+.port {
+    margin-top: 1080px;
+    position: absolute;
+    margin-left: -140px;
+}
+.port_coder {
+    margin-top: 1525px;
+    position: absolute;
+    margin-left: -140px;
+}
 /****************************************************Fim**********************************************************************/
 /****************************************************Background do form*******************************************************/
-.back_form {
-    width: 100%;
-    margin-top: 2428px;
+#back{
+    background-image: url(../img/jp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
 }
-#img{
-  width: 100%;
-  height: 1235px;
-}
+.form_esquerdo,
 .japao{
-  width: 100%;
-  height: 100%;
-  border-radius: 8px 0px 0px 8px;
+    width: 400px;
+    height: 665px;
+    border-radius: 8px 0px 0px 8px;
 }
 .form_direito {
-    width: 544px;
-    height: 765px;
+    width: 343px;
     background-color: #262626;
     position: relative;
-    margin-top: -825px;
+    margin-top: -745px;
     float: right;
     padding: 30px;
-    margin-right: 417px;
+    margin-right: 29%;
     border-radius: 0px 8px 8px 0px;
+    height: 605px;
 }
 .form_esquerdo {
-    width: 544px;
-    height: 765px;
     position: relative;
-    margin-top: -825px;
+    margin-top: -745px;
     float: left;
-    margin-left: 399px;
+    margin-left: 29%;
     border-radius: 8px 0px 0px 8px;
 }
 .form_direito, 
@@ -301,28 +310,28 @@ a{
 /****************************************************Fim**********************************************************************/
 /****************************************************Form*********************************************************************/
 .can_help {
-    font-size: 46px;
+    font-size: 33px;
     color: white;
     font-family: Segoe Ui;
     text-align: center;
 }
 .jean {
-    margin-top: -33px;
+  margin-top: -15px;
 }
 label{
   color: white;
-  font-size: 46px;
+  font-size: 35px;
   font-family: Segoe Ui;
 }
-input{
-  border-style: none;
-  border-bottom: solid 1px;
-  border-color:#707070;
-  color: white;
-  background-color: #262626; 
-  width: 100%; 
-  height: 80px;
-  font-size: 36px;
+input {
+    border-style: none;
+    border-bottom: solid 1px;
+    border-color: #707070;
+    color: white;
+    background-color: #262626;
+    width: 100%;
+    height: 51px;
+    font-size: 25px;
 }
 #place::-webkit-input-placeholder{    
     color: white;
@@ -338,7 +347,7 @@ textarea {
     font-family: Segoe Ui;
     font-size: 20px;
     padding: 5px;
-    width: 100%;
+    width: 321px;
     height: 250px;
 }
 .form_r {
@@ -442,48 +451,20 @@ button{
       height: 300px;
     }
 /****************************************************footer********************************************************************/
-footer {
-  padding: 67px;
-  margin-top: -25px;
-  width: 100%;
-  height: 100px;
-  background-color: #262626;
+footer {    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;    
 }
 h6 {
-  color: white;
-  font-size: 20px;
-  margin: auto;
-  color: white;
-  font-family: Segoe Ui;
-  text-align: center;
-}
-/****************************************************Fim**********************************************************************/
-.pulse {  
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-}
-
-.img_code {
-  width: 800px;
-  margin-top: 108px;
-}
-.img_lobinho {
-  float: right;
-  margin-right: 5px;
-  margin-top: -587px;
-  z-index: 2;    
-}
-#lobinho {
-    width: 960px;
-    height: 1538px;
-    position: static;
-}
-.skil{
-  width: 241px;
+    font-size: 15px;
+    margin: 12px;
+    color: white;
+    font-family: Segoe Ui;
+    text-align: center;
 }
 /****************************************************Animação scroll*********************************************************/
-/*.animation_e,
+.animation_e,
 .animation_d{
   opacity: 0;
   transition:  .3s;
@@ -503,234 +484,270 @@ h6 {
   transform: translate3d(0, 0, 0);
 }
 /****************************************************Fim*********************************************************************/
-/****************************************************Responsivo****************************************************/
-@media only screen and (max-width:1878px){
-  .form_direito{
-    margin-right: 397px;
-  }
-  .form_esquerdo{
-    margin-left: 378px;
-  }
+/****************************************************Menu_mobile**************************************************************/
+.menu_mobile{
+  display: none;
+  width: 40px;
+  height: 40px;  
+}
+.mm_l{
+  height: 4px; 
+  background-color: #E10404;
 }
 
-
-
-@media only screen and (max-width:1839px){
-  .form_direito{
-    margin-right: 378px;
+/**************************************************************Responsivo****************************************************/
+/****************************************************************viewport****************************************************/
+/*Revisão~ok*/
+@media only screen and (max-width:1440px){
+  .form_direito {
+    margin-right: 21.3%;
   }
   .form_esquerdo{
-    margin-left: 358px;
+    margin-left: 22%;
   }
-}
-
-
-
-@media only screen and (max-width:1798px){
-  .form_direito{
-    margin-right: 358px;
+  .pincel{
+    margin-left: 125px;
   }
-  .form_esquerdo{
-    margin-left: 338px;
-  }
-}
-
-
-
-@media only screen and (max-width:1760px){
-  .form_direito{
-    margin-right: 338px;
-  }
-  .form_esquerdo{
-    margin-left: 318px;
-  }
-}
-
-
-
-@media only screen and (max-width:1721px){
-  .form_direito{
-    margin-right: 319px;
-  }
-  .form_esquerdo{
-    margin-left: 299px;
-  }
-  .cristian {
-      width: 612px;    
-      margin-left: 140px;   
-  }
-  .retangulo{
-      width: 330px;
-      height: 330px;
-      margin-left: 280px;
+  .skewed .top {   
+    margin-left: -1015px;
   }
   .pincel {
-      margin-top: -495px;
-      margin-left: 153px;
-      width: 807px;
+    margin-left: 117px;
   }
-  .titulo,
-  .titulo_skil,
-  .titulo_ilus,
-  .titulo_coder {
-      font-size: 83px;
+  #wolf {
+    height: 1238px;
+    margin-top: 379px;   
+    margin-left: -675px;
   }
-  .texto {
-      font-size: 28px;
-  }
-  .skil {
-      width: 215px;
-  }
-  .habilidade {
-     width: 211px;
-  }
-}
 
-
-
-@media only screen and (max-width:1682px){
-  .form_direito{
-    margin-right: 299px;
-  }
-  .form_esquerdo{
-    margin-left: 279px;
-  }
-  .divisão_skil { 
-    margin-top: -1118px;
-  }
-}
-@media only screen and (max-width:1644px){
-  .form_direito{
-    margin-right: 280px;
-  }
-  .form_esquerdo{
-    margin-left: 260px;
-  }
-}
-@media only screen and (max-width:1605px){
-  .form_direito{
-    margin-right: 261px;
-  }
-  .form_esquerdo{
-    margin-left: 241px;
-  }
-}
-@media only screen and (max-width:1567px){
-  .form_direito{
-    margin-right: 242px;
-  }
-  .form_esquerdo{
-    margin-left: 222px;
-  }
-}
-@media only screen and (max-width:1490px){
-  .form_direito{
-    margin-right: 204px;
-  }
-  .form_esquerdo{
-    margin-left: 184px;
-  }
-}
-@media only screen and (max-width:1453px){
-  .form_direito{
-    margin-right: 185px;
-  }
-  .form_esquerdo{
-    margin-left: 165px;
-  }
-}
-@media only screen and (max-width:1415px){
-  .form_direito{
-    margin-right: 166px;
-  }
-  .form_esquerdo{
-    margin-left: 146px;
-  }
-}
-@media only screen and (max-width:1377px){
-  .form_direito{
-    margin-right: 147px;
-  }
-  .form_esquerdo{
-    margin-left: 127px;
-  }
-}
-@media only screen and (max-width:1338px){
-  .form_direito{
-    margin-right: 128px;
-  }
-  .form_esquerdo{
-    margin-left: 108px;
-  }
-}
-@media only screen and (max-width:1300px){
-  .form_direito{
-    margin-right: 109px;
-  }
-  .form_esquerdo{
-    margin-left: 89px;
-  }
-}
-@media only screen and (max-width:1261px){
-  .form_direito{
-    margin-right: 90px;
-  }
-  .form_esquerdo{
-    margin-left: 70px;
-  }
-}
-@media only screen and (max-width:1224px){
-  .form_direito{
-    margin-right: 71px;
-  }
-  .form_esquerdo{
-    margin-left: 51px;
-  }
 }
 @media only screen and (max-width:1024px){
-  .form_direito{
-    margin-right: 207px;
+  .form_direito {
+    margin-right: 9.9%;
+  }
+  .form_esquerdo {
+    margin-left: 11%;
+  }  
+  .retangulo{
+    width: 280px;
+    height: 280px;
+    margin-left: 260px;
+  }   
+  .skewed .top {   
+    margin-left: -1015px;
+  }
+  .cristian {
+    width: 412px;
+    margin-top: 21px;
+    margin-left: 194px;
+  }
+  .divisão_ferramenta_1 {  
+    margin-left: -378px;
+  }
+  .divisão_ferramenta_2 {    
+    margin-left: -384px;
+  }
+  .skewed .top {
+    margin-left: -1030px;
+  }
+}
+@media only screen and (max-width: 786px){
+  .form_esquerdo,
+  #wolf,
+  .pincel,
+  .retangulo {   
+    display: none;
+  }
+  .skil {
+    width: 155px;
+  }
+  .cristian{    
+    width: 351px;
+    margin-left: -256px;
+  }
+  .container{
+    width: 636px;
+  }
+  .divisão_ferramenta_2 {
+    margin-left: -487px;
+  }
+  .titulo_ilus {
+    margin-left: -401px;
+  }
+  .titulo_coder {
+    margin-left: -536px;
+  }
+  .port,
+  .port_coder {
+    margin-left: -499px;
+  }
+  .form_direito {
+    margin-right: 23.9%;
     border-radius: 8px;
   }
-  .form_esquerdo{
+  #ai {
+    margin-right: 5px;
+  }
+  #ps {
+    margin-left: 118px;
+    margin-right: 7px;
+  }
+  .skewed .top {
+    margin-left: -1037px;
+  }
+  nav ul{
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;        
+    margin-top: 20px;
+  }
+  nav ul{
+   display: none;
+  }
+  ul{    
+    margin-top: 30px;
+    text-align: center;   
+  }
+  header{
+    height: auto;
+  }
+  .menu_mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+  li{
+     background-color: rgba(0, 0, 0, 0.7);        
+  }
+  .cristian{
+    z-index: 2;
+  }  
+  .black_clover:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .menu_mobile{
+    padding: 10px;    
+  }
+  nav li .active .icon_svg,
+    nav li:hover{
+      background-color: rgba(0, 0, 0, 0.9);    
+    }
+}
+
+@media only screen and (max-width: 425px){
+  header{
+    height: 48px;
+  }
+  .container{
+    height: auto;
+    width: 300px;
+    text-align: center;
+  }
+  .lobo{
+    width: 30px;  
+  }  
+  .menu_mobile{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .black_clover:hover{  
+    width: 30px;
+    height: 30px;
+  }
+  nav ul{
+    margin-top: 9px;
+  }
+  .cristian,
+  .fig_cod,
+  .skewed .top{
+    display: none;
+  }  
+  .titulo {
+    width: 325px;
+    font-size: 2rem;
+    margin-left: -26px;
+  }
+  .titulo_skil {
+    font-size: 2rem;
+    margin-top: -260px;
+    margin-left: 117px;
+  }
+  .texto {
+    font-size: 16px;
+  }
+  .divisão_ferramenta_1 {
+    margin-top: 338px;
+    margin-left: -312px;
+}
+  .skil {
+    width: 73px;
+  }
+  .divisão_ferramenta_2 {
+    margin-left: -387px;
+    margin-top: 414px;
+  }
+  .ilustracao {
+    margin-top: 309px; 
+  }
+  .titulo_ilus {
+    margin-left: -318px;
+    font-size: 2rem;
+  }
+  .port {
+    margin-top: 512px;
+  }
+  .swiper-slide {
+    width: 200px;
+    height: 200px;  
+  }
+  .coder {
+    margin-top: 811px;
+    margin-left: 51px;
+  }
+  .titulo_coder {
+    margin-left: -285px;
+    font-size: 2rem;
+    width: 80px;
+  }
+  .port_coder {
+    margin-top: 833px;
+  }
+  #geral {   
+    height: 1143px;
+  }
+  #ps {
+    margin-left: 110px;
+    margin-right: 7px;
+    }
+  #xd {
+    margin-right: 0px;
+  }
+  .port, .port_coder {
+    margin-left: -361px;
+    }
+    .form_direito {
+    margin-right: 12.9%;
+    width: 283px;
+    height: 515px;
+  }
+  .can_help{
+    font-size: 27px;
+    margin-top: 40px
+  }
+  .form_r{
+      margin-left: 0;
+  }
+  textarea{
+    width: 274px;
+    height: 175px;
+  }  
+  .animation_d,
+  .animation_e{
     display: none;
   }
 }
-@media only screen and (max-width: 480px){
-  .form_direito {
-    margin-right: 51px;
-    width: 347px;
-    padding: 12px;
-    height: 574px;
-}
-  .can_help {
-    font-size: 30px;
-}
-input{
-  height: 35px;
-  font-size: 16px;
-}
-.form_r {
-    margin-top: -7%;
-}
-label{
-  font-size: 30px;
-}
-.jean {
-    margin-top: -12px;
-}
-#place::-webkit-input-placeholder{    
-    color: white;
-    background-color: #262626;
-    text-transform: uppercase;
-    font-family: Segoe Ui;
-    font-size: 16px;
-    }
-
-}
-
-
-
-
-    
-  

@@ -3,134 +3,182 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
 			<title>Cristian Renato</title>
 			<link href="css/animate.css" rel="stylesheet">
 			<link href="css/swiper.min.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet">		
+			<link href="css/style.css" rel="stylesheet">	
+
+			<script type="text/javascript">
+				window.onload = function(){
+					document.querySelector(".menu_mobile").addEventListener("click", function(){
+						if (document.querySelector(".menu nav ul").style.display =='flex') {
+							document.querySelector(".menu nav ul").style.display = 'none';
+						}else{
+							document.querySelector(".menu nav ul").style.display = 'flex';
+						}
+					});
+				};
+			</script>
+
 		</head>
 	<body>
 		<script src="js/script.js"></script>
 		<script src="js/swiper.min.js"></script>						
-		<header>
+		<header>			
+			<div class="container">						
+				<div class="logo">
+					<a href=""><img class="lobo" src="img/LOGO-CRIS_02.png" alt="lobo"></a>
+				</div>				
+				<div class="menu">
+					<nav>
+						<div class="black_clover">
+							<div class="menu_mobile">								
+								<div class="mm_l"></div>
+								<div class="mm_l"></div>
+								<div class="mm_l"></div>
+							</div>	
+						</div>										
+						<ul>
+							<li class="active">
+								<a href="https://api.whatsapp.com/send?1=ptBR&phone=5511949389925">
+									<img class="icon_svg" src="icon/zap-zap.svg" alt="Whatsapp">
+								</a>
+							</li>
+							<li>
+								<a href="mailto:cristianhiei@gmail.com">
+									<img class="icon_svg" src="icon/email.svg" alt="Gmail">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/cristianrenato.andrademelo">
+									<img class="icon_svg" src="icon/facebook.svg" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/utopia_games_toy/?hl=pt-br">
+									<img class="icon_svg" src="icon/instagram.svg" alt="Instagram">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/feed/">
+									<img class="icon_svg" src="icon/linkedin.svg" alt="Linkedin">
+								</a>
+							</li>
+						</ul>
+					</nav>					
+				</div>
+			</div>			
+		</header>
+		<section>
 			<div class="splitview skewed">
         		<div class="panel bottom">
             		<div class="content">
-	                <div class="description">
-	                    <p id="prof">Code</p>	                    
-	                </div>
-					<img class="original" src="img/img-original-cris.jpg"> 
+					<img class="original" src="img/img-original-cris.jpg" alt="foto_original"> 
 				</div>
 			</div>
 			<div class="panel top">
-	            <div class="content">
-	                <div class="description">
-	                    <p id="prof">Design</p>	                   
-	                </div>
-	                <img class="modificado"src="img/img-modified-cris.jpg">
+	            <div class="content">	                
+	                <img class="modificado"src="img/img-modified-cris.jpg" alt="foto_modificada">
 	            </div>
         	</div>
-        <div class="handle"></div>
+        	<div class="handle"></div>
     	</div>
-		<div class="barra_tarefas">				
-				<nav>
-					<div class="logo">
-						<img class="lobo" src="img/LOGO-CRIS_02.png">
-					</div>
-					<div class="redes_sociais animated pulse">
-						<ul>
-							<li><a href="https://api.whatsapp.com/send?1=ptBR&phone=5511949389925"><img class="icon_svg" src="icon/zap-zap.svg"></a></li>
-							<li><a href="mailto:cristianhiei@gmail.com"><img class="icon_svg" src="icon/email.svg"></a></li>
-							<li><a href="https://www.facebook.com/cristianrenato.andrademelo"><img class="icon_svg" src="icon/facebook.svg"></a></li>
-							<li><a href="https://www.instagram.com/utopia_games_toy/?hl=pt-br"><img class="icon_svg" src="icon/instagram.svg"></a></li>
-							<li><a href="https://www.linkedin.com/feed/"><img class="icon_svg" src="icon/linkedin.svg"></a></li>
-						</ul>
-					</div>
-				</nav>
-		</div>			
-		</header>
-
-		<section class="conteudo">
-			<div class="section_left animation_e">
-				<p class="titulo">Sobre mim</p>
-				<p class="texto">
-					Sou recém formado em<br>
-					Análise e Desenvolvimento de Sistemas<br>
-					na Universidade Eniac.<br>
-					Gosto de transformar problemas em<br>
-					Designer Simples, bonitos e intuitivos.<br>
-					Se eu não estiver codificando, você me<br>
-					encontrara tocando violão ou lendo<br>
-					algum livro.<br>
-				</p>
-			</div>
-			<div class="section_right animation_d">	
-				<img class="cristian" src="img/cris.png">			
-				<div class="retangulo"></div>
-				<img class="pincel" src="img/133.png">				
-			</div>
-			<div class="img_code">
-				<img class="fig_cod" src="img/code.png">
-			</div>
-			<div class="img_lobinho">
-				<img id="lobinho" src="img/lobinho.png">
-			</div>			
-			<div class="divisão_skil animation_e">
-				<p class="titulo_skil ">Ferramentas</p>				
-			</div>
-			<div class="container">
-					<div class="habilidade animation_e"><img class="skil" src="img/htmlok.png"></div>						
-					<div class="habilidade animation_e"><img class="skil" src="img/css.png"></div>						
-					<div class="habilidade animation_d"><img class="skil" src="img/js.png"></div>						
-					<div class="habilidade animation_d"><img class="skil" src="img/php.png"></div>									
-			</div>
-			<div class="container_1">
-					<div class="habilidade animation_e"><img class="skil" src="img/ps.png"></div>						
-					<div class="habilidade animation_d"><img class="skil" src="img/ai.png"></div>						
-					<div class="habilidade animation_d"><img class="skil" src="img/xd.png"></div>
-			</div>
-			<div class="ilustracao animation_e">
-				<p class="titulo_ilus">
-					Ilustrações
-				</p>
-			</div>
-			<div class="container mayk animation_d">				 
-				<div class="swiper-container">
-				    <div class="swiper-wrapper">
-				      <div class="swiper-slide"></div>
-				      <div class="swiper-slide"></div>				      
-				    </div>
-	    		
-	    			<div class="swiper-pagination"></div>
-	  			</div>							
-			</div>
-			<div class="coder animation_e">
-				<p class="titulo_coder">
-					Coder
-				</p>
-			</div>
-			<div class="container mayk_1 animation_d">
-				<!-- Swiper -->
-			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			      <div class="swiper-slide"></div>
-			      <div class="swiper-slide"></div>			      
-			    </div>
-    		<!--Add Pagination-->
-    		<div class="swiper-pagination"></div>			
-			</div>			
 		</section>
-		<div class="back_form">
-			<img id="img" class="form" src="img/jp.jpg"></img>			
-				<div class="form_direito animation_d">					
+		
+		<section id="geral">
+			<div class="container animation_e">
+				<section>
+					<article class="titulo">
+						<p id="titulo">Sobre mim</p>
+						<article>
+							<p class="texto">
+						Sou recém formado em<br>
+						Análise e Desenvolvimento de Sistemas<br>
+						na Universidade Eniac.<br>
+						Gosto de transformar problemas em<br>
+						Designer Simples, bonitos e intuitivos.<br>
+						Se eu não estiver codificando, você me<br>
+						encontrara tocando violão ou lendo<br>
+						algum livro.<br>
+						</p>	
+						</article>						
+					</article>	
+				<article id="fig_cod">					
+					<img class="fig_cod" src="img/code.png" alt="codigo">
+				</article>														
+				</section>
+				<section>
+					<div class="container divisão_skil animation_e">
+						<p class="titulo_skil ">Ferramentas</p>				
+					</div>
+					<div class="container divisão_ferramenta_1 animation_e">
+						<div><img class="skil" id="html" src="img/htmlok.png" alt="html"></div>						
+						<div><img class="skil" id="css" src="img/css.png" alt="css"></div>						
+						<div><img class="skil" id="js" src="img/js.png" alt="javascript"></div>						
+						<div><img class="skil" id="php" src="img/php.png" alt="php"></div>									
+					</div>	
+				</section>
+				<section>
+					<div class="container divisão_ferramenta_2 animation_d">
+						<div><img class="skil" id="ps" src="img/ps.png" alt="photoshop"></div>						
+						<div><img class="skil" id="ai" src="img/ai.png" alt="illustrator"></div>						
+						<div><img class="skil" id="xd" src="img/xd.png" alt="adobe_xd"></div>
+					</div>
+				</section>
+				<section>
+					<div class="ilustracao animation_e">
+						<p class="titulo_ilus">
+							Ilustrações
+						</p>
+					</div>
+					<article>
+						<div class="port animation_d">				 
+						<div class="swiper-container">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide"></div>
+						      <div class="swiper-slide"></div>				      
+						    </div>			    		
+			    			<div class="swiper-pagination"></div>
+			  			</div>							
+					</div>
+					<div class="coder animation_e">
+						<p class="titulo_coder">
+							Coder
+						</p>
+					</div>
+					<div class="port_coder animation_d">				
+						<div class="swiper-container">
+			    			<div class="swiper-wrapper">
+			      				<div class="swiper-slide"></div>
+			      				<div class="swiper-slide"></div>			      
+			 				</div>
+    					<!--Add Pagination-->
+    						<div class="swiper-pagination"></div>			
+						</div>
+					</div>
+					</article>					
+				</section>
+				<aside class="">
+					<img class="cristian animation_d" src="img/cris.png" alt="cristian">			
+					<div class="retangulo"></div>
+					<img class="pincel" src="img/133.png" alt="pincel">
+					<img id="wolf" src="img/lobinho.png" alt="wolf">					
+				</aside>							
+			</div>						
+		</section>
+		<section>
+			<div id="back"></div>
+			<section>
+				<div class="form_direito animation_d">
 					<form class="form_r" method="POST" action="#">
 						<p class="can_help">Como posso te ajudar?</p>
-						<div class="jean">
-							<input placeholder="Nome:" id="place" type="text" name="txtnome"><br>
-							<input placeholder="Telefone:" id="place" type="text" name="txtnome"><br>
-							<input placeholder="E-mail:" id="place" type="email" name="txtnome"><br>
-							<label>Mensagem:</label><br>
-							<textarea></textarea><br>
+							<div class="jean">
+								<input placeholder="Nome:" id="place" type="text" name="txtnome"><br>
+								<input placeholder="Telefone:" id="place" type="text" name="txtnome"><br>
+								<input placeholder="E-mail:" id="place" type="email" name="txtnome"><br>
+								<label>Mensagem:</label><br>
+								<textarea></textarea><br>
 								<button class="ok">						
 										<span></span>
 			  							<span></span>
@@ -138,13 +186,16 @@
 			  							<span></span>
 										Enviar</a>												
 								</button>
-						</div>
-					</form>		
+							</div>
+					</form>
 				</div>		
+		</section>
+		<section>
 				<div class="form_esquerdo animation_e">
-					<img class="japao" src="img/form.jpg"></img>
-				</div>			
-		</div>
+					<img class="japao" src="img/form.jpg" alt="japão"></img >
+				</div>
+			</section>
+		</section>
 		<footer>
 			<h6>2019 Cristian R.</h6>
 		</footer>
@@ -167,6 +218,5 @@
 		    });
   		</script>
   		<script src="js/animacao.js"></script>
-
   	</body>
 </html>

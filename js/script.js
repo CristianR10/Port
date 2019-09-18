@@ -25,4 +25,3 @@ document.addEventListener('DOMContentLoaded', function() {
 /*Fim*//*querySelectorAll se der errado*/
 /*****Comando animações******/
 
-

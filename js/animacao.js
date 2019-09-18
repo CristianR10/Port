@@ -1,7 +1,7 @@
-/*const target   = document.querySelectorAll('.animation_e');
+const target   = document.querySelectorAll('.animation_e');
 const target_R = document.querySelectorAll('.animation_d');
 /***************************************************Animação do lado Esquerdo******************************************************/
-/*const debounce = function(func, wait, immediate) {
+const debounce = function(func, wait, immediate) {
   let timeout;
   return function(...args) {
     const context = this;
@@ -18,7 +18,7 @@ const target_R = document.querySelectorAll('.animation_d');
 
 function animeScroll(){
 	//console.log("asdfasd");
-	const windowTop = window.pageYOffset + ((window.innerHeight * 3 /6));
+	const windowTop = window.pageYOffset + ((window.innerHeight * 3 /4));
 	//console.log(windowTop);
 	target.forEach(function(element){
 	console.log(element.offsetTop);
@@ -34,13 +34,13 @@ animeScroll();
 if (target.length) {
 	window.addEventListener('scroll', debounce(function(){
 		animeScroll();
-	}, 300));
+	}, 200));
 }
 
 /***************************************************Animação do lado direito******************************************************/
-/*function animeScroll_R(){
+function animeScroll_R(){
 	//console.log("asdfasd");
-	const windowTop = window.pageYOffset + ((window.innerHeight * 3 /6));;
+	const windowTop = window.pageYOffset + ((window.innerHeight * 3 /4));;
 	//console.log(windowTop);
 	target_R.forEach(function(element_r){
 	console.log(element_r.offsetTop);
@@ -56,6 +56,6 @@ animeScroll_R();
 if (target_R.length) {
 	window.addEventListener('scroll', debounce(function(){
 		animeScroll_R();
-	}, 300));
+	}, 200));
 }
 /*******************************************************************fim*************************************************************/

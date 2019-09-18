@@ -1,1 +1,0 @@
-const anime = document.querySelectorAll('animated');
