@@ -2,12 +2,18 @@
 <html lang="pt-br">	
 	<head>
 		<meta charset="utf-8">
+		<meta name="description" content="Portfólio">
+		<meta name="keywords" content="HTML,CSS,JavaScript,portfolio,port,freelance,contato,email,designer,webdesigner,web designer jr">
+  		<meta name="author" content="Cristian Renato Andrade Melo">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<meta name="theme-color" content="#E10404">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#E10404">
 			<title>Cristian Renato</title>
-			<link href="css/animate.css" rel="stylesheet">
+			<link href="css/theme-animate.css" rel="stylesheet">
 			<link href="css/swiper.min.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet">	
+			<link href="css/style.css" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">	
 
 			<script type="text/javascript">
 				window.onload = function(){
@@ -79,7 +85,7 @@
 			</div>
 			<div class="panel top">
 	            <div class="content">	                
-	                <img class="modificado"src="img/img-modified-cris.jpg" alt="foto_modificada">
+	                <img class="modificado" src="img/img-modified-cris.jpg" alt="foto_modificada">
 	            </div>
         	</div>
         	<div class="handle"></div>
@@ -93,19 +99,19 @@
 						<p id="titulo">Sobre mim</p>
 						<article>
 							<p class="texto">
-						Sou recém formado em<br>
-						Análise e Desenvolvimento de Sistemas<br>
-						na Universidade Eniac.<br>
-						Gosto de transformar problemas em<br>
-						Designer Simples, bonitos e intuitivos.<br>
-						Se eu não estiver codificando, você me<br>
-						encontrara tocando violão ou lendo<br>
-						algum livro.<br>
+						Sou recém formado em
+						Análise e Desenvolvimento de Sistemas
+						na Universidade Eniac.
+						Gosto de transformar problemas em
+						Designer Simples, bonitos e intuitivos.
+						Se eu não estiver codificando, você me
+						encontrara tocando violão ou lendo
+						algum livro.
 						</p>	
 						</article>						
 					</article>	
-				<article id="fig_cod">					
-					<img class="fig_cod" src="img/code.png" alt="codigo">
+				<article class="fig_cod" id="fig_cod">					
+					<!--div class="fig_cod" src="img/code.png" alt="codigo"-->
 				</article>														
 				</section>
 				<section>
@@ -113,17 +119,17 @@
 						<p class="titulo_skil ">Ferramentas</p>				
 					</div>
 					<div class="container divisão_ferramenta_1 animation_e">
-						<div><img class="skil" id="html" src="img/htmlok.png" alt="html"></div>						
-						<div><img class="skil" id="css" src="img/css.png" alt="css"></div>						
-						<div><img class="skil" id="js" src="img/js.png" alt="javascript"></div>						
-						<div><img class="skil" id="php" src="img/php.png" alt="php"></div>									
+						<div><img class="skil animated pulse infinite delay-2s" id="html" src="img/htmlok.png" alt="html"></div>						
+						<div><img class="skil animated pulse infinite delay-2s" id="css" src="img/css.png" alt="css"></div>						
+						<div><img class="skil animated pulse infinite delay-2s" id="js" src="img/js.png" alt="javascript"></div>						
+						<div><img class="skil animated pulse infinite delay-2s" id="php" src="img/php.png" alt="php"></div>									
 					</div>	
 				</section>
 				<section>
 					<div class="container divisão_ferramenta_2 animation_d">
-						<div><img class="skil" id="ps" src="img/ps.png" alt="photoshop"></div>						
-						<div><img class="skil" id="ai" src="img/ai.png" alt="illustrator"></div>						
-						<div><img class="skil" id="xd" src="img/xd.png" alt="adobe_xd"></div>
+						<div><img class="skil animated pulse infinite delay-2s" id="ps" src="img/ps.png" alt="photoshop"></div>						
+						<div><img class="skil animated pulse infinite delay-2s" id="ai" src="img/ai.png" alt="illustrator"></div>						
+						<div><img class="skil animated pulse infinite delay-2s" id="xd" src="img/xd.png" alt="adobe_xd"></div>
 					</div>
 				</section>
 				<section>
@@ -159,11 +165,11 @@
 					</div>
 					</article>					
 				</section>
-				<aside class="">
-					<img class="cristian animation_d" src="img/cris.png" alt="cristian">			
+				<aside>
+					<img class="cristian animation_d" src="img/cris-min.png" alt="cristian">			
 					<div class="retangulo"></div>
-					<img class="pincel" src="img/133.png" alt="pincel">
-					<img id="wolf" src="img/lobinho.png" alt="wolf">					
+					<div class="pincel"></div>
+					<div id="wolf"></div>					
 				</aside>							
 			</div>						
 		</section>
@@ -174,9 +180,9 @@
 					<form class="form_r" method="POST" action="#">
 						<p class="can_help">Como posso te ajudar?</p>
 							<div class="jean">
-								<input placeholder="Nome:" id="place" type="text" name="txtnome"><br>
-								<input placeholder="Telefone:" id="place" type="text" name="txtnome"><br>
-								<input placeholder="E-mail:" id="place" type="email" name="txtnome"><br>
+								<input placeholder="Nome:" class="place" type="text" name="txtnome"><br>
+								<input placeholder="Telefone:" class="place" type="text" name="txtnome"><br>
+								<input placeholder="E-mail:" class="place" type="email" name="txtnome"><br>
 								<label>Mensagem:</label><br>
 								<textarea></textarea><br>
 								<button class="ok">						
@@ -184,7 +190,7 @@
 			  							<span></span>
 			  							<span></span>
 			  							<span></span>
-										Enviar</a>												
+										Enviar											
 								</button>
 							</div>
 					</form>
@@ -192,7 +198,7 @@
 		</section>
 		<section>
 				<div class="form_esquerdo animation_e">
-					<img class="japao" src="img/form.jpg" alt="japão"></img >
+					<img class="japao" src="img/form.jpg" alt="japão">
 				</div>
 			</section>
 		</section>
