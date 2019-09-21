@@ -142,8 +142,17 @@
 						<div class="port animation_d">				 
 						<div class="swiper-container">
 						    <div class="swiper-wrapper">
-						      <div class="swiper-slide"></div>
-						      <div class="swiper-slide"></div>				      
+						    	<div class="swiper-slide">
+						    		<div class="imgbox">
+						    			<a href="img/LOGO-CRIS_02.png">
+						    				<img class="teste" src="img/LOGO-CRIS_02.png">
+						    			</a>
+						    			<div class="detalhes">
+						    				<span class="title"> Logo Oficial - Cristian </span>
+						    			</div>
+						    		</div>
+						    	</div>
+						    	<div class="swiper-slide"></div>				      
 						    </div>			    		
 			    			<div class="swiper-pagination"></div>
 			  			</div>							
@@ -177,14 +186,14 @@
 			<div id="back"></div>
 			<section>
 				<div class="form_direito animation_d">
-					<form class="form_r" method="POST" action="#">
+					<form class="form_r" method="POST" action="mail.php">
 						<p class="can_help">Como posso te ajudar?</p>
 							<div class="jean">
-								<input placeholder="Nome:" class="place" type="text" name="txtnome"><br>
-								<input placeholder="Telefone:" class="place" type="text" name="txtnome"><br>
-								<input placeholder="E-mail:" class="place" type="email" name="txtnome"><br>
+								<input placeholder="Nome:" class="place" type="text" name="nome" required><br>
+								<input placeholder="Telefone:" class="place" type="text" name="tel" required><br>
+								<input placeholder="E-mail:" class="place" type="email" name="email"><br>
 								<label>Mensagem:</label><br>
-								<textarea></textarea><br>
+								<textarea name="msg" required></textarea><br>
 								<button class="ok">						
 										<span></span>
 			  							<span></span>
@@ -212,7 +221,7 @@
 		      centeredSlides: true,
 		      slidesPerView: 'auto',
 		      coverflowEffect: {
-		        rotate: 50,
+		        rotate: 20,
 		        stretch: 0,
 		        depth: 100,
 		        modifier: 1,
